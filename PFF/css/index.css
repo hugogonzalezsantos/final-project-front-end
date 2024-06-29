@@ -1,0 +1,101 @@
+.cabecera__container{
+    background-color: blueviolet;
+    width: 100%;
+}
+
+.logo__item{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.rodapie__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+.general{
+    width: 100%;
+    padding: 60px 40px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+.productos{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.card{
+    padding: 10px;
+    background-color: var(--violeta-claro);
+    border-radius: 10px;
+    border: solid 3px black;
+    margin: 10px;
+    color: white;
+}
+.seccion-cards{
+    display: flex;
+    padding: 40px;
+    flex-flow: wrap;
+    height: 971px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    justify-content: space-around;
+    gap: 10px;
+}
+.card-container--info{
+    padding: 10px 0 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.card-container--info p{
+    font-size: large;
+}
+.card-container--value{
+    display: flex;
+    justify-content: space-between;
+}
+.agregar-productos{
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+    height: fit-content;
+
+}
+.add-form-section{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.forms-boton{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .general{
+        width: 100%;
+        padding: 60px 40px;
+        display: flex;
+        flex-direction: column-reverse;
+        color: black;
+    }
+    .seccion-cards{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        overflow: scroll;
+        order: 2;
+    }
+   
+   
+}
